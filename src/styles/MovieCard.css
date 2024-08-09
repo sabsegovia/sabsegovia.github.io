@@ -1,0 +1,137 @@
+.movie-card {
+  background-color: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.movie-card.expanded {
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.movie-card h3 {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.movie-card h3 span {
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+.movie-card p {
+  margin: 5px 0;
+}
+
+.rating {
+  margin: 10px 0;
+}
+
+.star {
+  cursor: pointer;
+  color: #ccc;
+  font-size: 1.5em;
+  position: relative;
+}
+
+.star.filled {
+  color: #ffcc00;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+.buttons button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.buttons .watchlist:hover {
+  background-color: #40bcf4;
+}
+
+.buttons .favorites:hover {
+  background-color: #ff8000;
+}
+
+.buttons .watched:hover {
+  background-color: #00e054;
+}
+
+.buttons .delete:hover{
+  background-color: rgb(250, 43, 43);
+}
+
+.buttons button:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.info-button {
+  background-color: #40bcf4;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+  background-color: #3399cc;
+}
+
+.movie-details {
+  margin-top: 10px;
+  text-align: left;
+  color: #bbb;
+}
+
+.synopsis {
+  margin-bottom: 5px;
+}
+
+.general-rating {
+  margin-bottom: 0;
+}
+
+
+
