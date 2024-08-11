@@ -66,3 +66,93 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Responsive */
+
+/* Para pantallas de al menos 480px */
+@media (min-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .movie-card {
+    margin-bottom: 25px;
+  }
+}
+
+/* Para pantallas de al menos 768px */
+@media (min-width: 768px) {
+  header {
+    text-align: left;
+    padding: 40px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .movie-card h3 {
+    font-size: 1.5em;
+  }
+
+  .movie-card p {
+    font-size: 1em;
+  }
+
+  .page-content {
+    padding: 30px;
+  }
+}
+
+/* Para pantallas de al menos 1024px */
+@media (min-width: 1024px) {
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  header {
+    padding: 60px;
+  }
+
+  .container {
+    max-width: 1000px;
+  }
+
+  .movie-card {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Para pantallas de al menos 1200px */
+@media (min-width: 1200px) {
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  header {
+    padding: 80px;
+  }
+
+  .container {
+    max-width: 1200px;
+    padding: 40px;
+  }
+
+  .movie-card {
+    flex-basis: 15%;
+    margin-bottom: 40px;
+  }
+
+  .page-content {
+    padding: 50px;
+  }
+}
