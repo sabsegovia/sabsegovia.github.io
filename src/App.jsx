@@ -7,6 +7,7 @@ import WatchlistPage from './pages/WatchlistPage';
 import FavoritesPage from './pages/FavoritesPage';
 import WatchedPage from './pages/WatchedPage';
 import Footer from './components/Footer';
+import './index.css';
 
   
 const App = () => {
