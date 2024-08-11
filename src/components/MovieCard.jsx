@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faHeart, faClock, faTrash, faStar } from '@fortawesome/free-solid-svg-icons';
 import '../styles/MovieCard.css';
+import '../index.css';
 
 const MovieCard = ({ movie, handleListChange, handleDeleteMovie }) => {
   const [rating, setRating] = useState(movie.rating || 0);
