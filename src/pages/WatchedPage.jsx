@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/WatchedPage.css';
 import { movies } from '../data/movies';
 import MovieCard from '../components/MovieCard';
+import '../index.css';
 
 const WatchedPage = ({ watched, handleListChange, handleDeleteMovie }) => {
   return (
