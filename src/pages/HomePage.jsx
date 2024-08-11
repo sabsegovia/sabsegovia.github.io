@@ -4,6 +4,7 @@ import MovieCard from '../components/MovieCard';
 import { faVideoCamera } from '@fortawesome/free-solid-svg-icons';
 import '../styles/HomePage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../index.css';
 
 const HomePage = ({ handleListChange }) => {
   return (
